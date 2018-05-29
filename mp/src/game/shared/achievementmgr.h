@@ -101,7 +101,7 @@ public:
 	bool LoggedIntoSteam() 
 	{ 
 #if !defined(NO_STEAM)
-		return ( steamapicontext->SteamUser() && steamapicontext->SteamUserStats() && steamapicontext->SteamUser()->BLoggedOn() ); 
+		return ( SteamUser() && SteamUserStats() && SteamUser()->BLoggedOn() ); 
 #else
 		return false;
 #endif
